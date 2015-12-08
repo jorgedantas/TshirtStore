@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using TshirtStore.Domain.Enums;
+using TshirtStore.Domain.Scopes;
+using TshirtStore.SharedKernel.Events;
+using TshirtStore.SharedKernel.Validation;
 
 namespace TshirtStore.Domain.Entities
 {
@@ -21,7 +24,7 @@ namespace TshirtStore.Domain.Entities
         public int Id { get; private set; }
         public DateTime Date { get; private set; }
 
-        public IEnumerable<OrderItem> OrderItem
+        public ICollection<OrderItem> OrderItem
         {
             get { return _orderItems; }
             private set { _orderItems = new List<OrderItem>();}
@@ -46,8 +49,14 @@ namespace TshirtStore.Domain.Entities
         public EOrderStatus Status { get; private set; }
         public void AddItem(OrderItem item)
         {
-            
-            
+            //AssertionConcern.AssertLength("123456", 2, 5, "Minimo 2 caracteres");
+            if (item.Register())
+                _orderItems.Add(item);
+            // Sem utilizar AssertionConcern
+            // if (item.Price <= 0)
+            //    new DomainNotification("Price", "Preço deve ser maior que zero!");
+
+
             //Error : Problema Interrupção da Execução
             //if (item == null)
             //{
@@ -62,6 +71,30 @@ namespace TshirtStore.Domain.Entities
             //    throw new Exception("Item Inválido");
             //}
             //_orderItems.Add(item);
+        }
+
+        public void Place()
+        {
+            if (!this.PlaceOrderScopeIsValid())
+                return;
+        }
+
+
+        public void MarkAsPaid()
+        {
+
+            this.Status = EOrderStatus.Paid;
+        }
+
+        public void MarkAsDelivered()
+        {
+
+            this.Status = EOrderStatus.Delivered;
+        }
+
+        public void Cancel()
+        {
+            this.Status = EOrderStatus.Canceled;
         }
     }
 

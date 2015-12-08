@@ -47,6 +47,17 @@
     <Compile Include="Entities\User.cs" />
     <Compile Include="Enums\EOrderStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scopes\CategoryScopes.cs" />
+    <Compile Include="Scopes\OrderItemScopes.cs" />
+    <Compile Include="Scopes\OrderScopes.cs" />
+    <Compile Include="Scopes\ProductScopes.cs" />
+    <Compile Include="Scopes\UsersScopes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TshirtStore.SharedKernel\TshirtStore.SharedKernel.csproj">
+      <Project>{A8C46B03-AA85-4B89-9156-1AE00A380B30}</Project>
+      <Name>TshirtStore.SharedKernel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
