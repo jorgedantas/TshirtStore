@@ -10,7 +10,7 @@ namespace TshirtStore.Domain.Specs
         {
             return x => x.QuantityOnhand > 0;
         }
-        public static Expression<Func<Product, bool>> GetProductOutStock()
+        public static Expression<Func<Product, bool>> GetProductOutOfStock()
         {
             return x => x.QuantityOnhand == 0;
         }
