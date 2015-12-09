@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TshirtStore.Domain.Tests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TshirtStore.SharedKernel", "TshirtStore.SharedKernel\TshirtStore.SharedKernel.csproj", "{A8C46B03-AA85-4B89-9156-1AE00A380B30}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{DEFF6CFD-4B19-4FE1-8F61-5091C3C285B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TshirtStore.Infra", "TshirtStore.Infra\TshirtStore.Infra.csproj", "{8DB3CA9F-E586-4AD1-B8B0-06096404B3EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{A8C46B03-AA85-4B89-9156-1AE00A380B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8C46B03-AA85-4B89-9156-1AE00A380B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8C46B03-AA85-4B89-9156-1AE00A380B30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB3CA9F-E586-4AD1-B8B0-06096404B3EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB3CA9F-E586-4AD1-B8B0-06096404B3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB3CA9F-E586-4AD1-B8B0-06096404B3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB3CA9F-E586-4AD1-B8B0-06096404B3EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,5 +47,6 @@ Global
 		{A255AE4A-8902-4699-8C97-E79A2874448B} = {4FDF39F6-5CA4-4657-ABAF-BC81195476A4}
 		{299598C0-1340-43BA-8D62-E3E51AB41879} = {CB348B96-54E9-43FE-8AD4-E4A21847D95D}
 		{A8C46B03-AA85-4B89-9156-1AE00A380B30} = {4FDF39F6-5CA4-4657-ABAF-BC81195476A4}
+		{8DB3CA9F-E586-4AD1-B8B0-06096404B3EC} = {DEFF6CFD-4B19-4FE1-8F61-5091C3C285B5}
 	EndGlobalSection
 EndGlobal
