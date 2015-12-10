@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using TshirtStore.Domain.Entities;
+using TshirtStore.Domain.Repositories;
 using TshirtStore.Domain.Specs;
 using TshirtStore.Infra.Persistence.DataContexts;
 
 namespace TshirtStore.Infra.Repositories
 {
-    public class UserRepository
+    public class UserRepository : IUserRepository
     {
         private StoreDataContext _context;
 

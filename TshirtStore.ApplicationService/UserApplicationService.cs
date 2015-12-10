@@ -6,7 +6,7 @@ using TshirtStore.Infra.Persistence;
 
 namespace TshirtStore.ApplicationService
 {
-    class UserApplicationService : ApplicationService , IUserApplicationService
+    public class UserApplicationService : ApplicationService , IUserApplicationService
     {
         private IUserRepository _repository;
 

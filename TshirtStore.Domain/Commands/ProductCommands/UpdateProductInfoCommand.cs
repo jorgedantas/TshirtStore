@@ -2,12 +2,12 @@
 {
     public class UpdateProductInfoCommand
     {
-        public UpdateProductInfoCommand(int id, string title, string description,  int categoryid)
+        public UpdateProductInfoCommand(int id, string title, string description, int category)
         {
             this.Id = id;
             this.Title = title;
             this.Description = description;
-            this.CategoryId = categoryid;
+            this.CategoryId = category;
         }
 
         public int Id { get; set; }

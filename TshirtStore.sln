@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TshirtStore.ApplicationServ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TshirtStore.CrossCutting", "TshirtStore.CrossCutting\TshirtStore.CrossCutting.csproj", "{B88B6CD3-1E5A-4931-9390-C6F95CA29745}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - API", "1 - API", "{C5C2C1B1-191F-4EC7-BFFE-A64BB95979F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TshirtStore.Api", "TshirtStore.Api\TshirtStore.Api.csproj", "{52E899B0-08AE-4C36-85C8-97C178316E5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +57,10 @@ Global
 		{B88B6CD3-1E5A-4931-9390-C6F95CA29745}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B88B6CD3-1E5A-4931-9390-C6F95CA29745}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B88B6CD3-1E5A-4931-9390-C6F95CA29745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52E899B0-08AE-4C36-85C8-97C178316E5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E899B0-08AE-4C36-85C8-97C178316E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E899B0-08AE-4C36-85C8-97C178316E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E899B0-08AE-4C36-85C8-97C178316E5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,5 +72,6 @@ Global
 		{8DB3CA9F-E586-4AD1-B8B0-06096404B3EC} = {DEFF6CFD-4B19-4FE1-8F61-5091C3C285B5}
 		{809C7F78-38F3-4D06-B68C-70CADAA24BD6} = {6F0F21D0-5B7D-4F22-9EEF-A5F9877E6246}
 		{B88B6CD3-1E5A-4931-9390-C6F95CA29745} = {DEFF6CFD-4B19-4FE1-8F61-5091C3C285B5}
+		{52E899B0-08AE-4C36-85C8-97C178316E5E} = {C5C2C1B1-191F-4EC7-BFFE-A64BB95979F9}
 	EndGlobalSection
 EndGlobal

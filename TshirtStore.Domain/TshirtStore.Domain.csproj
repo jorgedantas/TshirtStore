@@ -38,6 +38,12 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="TshirtStore.ApplicationService">
+      <HintPath>..\TshirtStore.Api\Bin\TshirtStore.ApplicationService.dll</HintPath>
+    </Reference>
+    <Reference Include="TshirtStore.Infra">
+      <HintPath>..\TshirtStore.Api\Bin\TshirtStore.Infra.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\CategoryCommands\CreateCategoryCommand.cs" />

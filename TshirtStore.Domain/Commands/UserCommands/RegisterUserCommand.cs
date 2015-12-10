@@ -7,11 +7,11 @@
         public bool IsAdmin { get; set; }
 
 
-        public RegisterUserCommand(string email, string password, bool isaAdmin)
+        public RegisterUserCommand(string email, string password, bool isAdmin)
         {
             this.Email = email;
             this.Password = password;
-            this.IsAdmin = isaAdmin;
+            this.IsAdmin = isAdmin;
         }
     }
 }

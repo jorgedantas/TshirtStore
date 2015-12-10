@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using TshirtStore.Domain.Commands.OrderCommands;
 using TshirtStore.Domain.Entities;
 using TshirtStore.Domain.Services;
+using TshirtStore.Infra.Persistence;
 
 namespace TshirtStore.Domain.Repositories
 {
-    public class OrderApplicationService : ApplicationService, IOrderApplicationService
+    public class OrderApplicationService : ApplicationService.ApplicationService, IOrderApplicationService
     {
         private IOrderRepository _orderRepository;
         private IUserRepository _userRepository;

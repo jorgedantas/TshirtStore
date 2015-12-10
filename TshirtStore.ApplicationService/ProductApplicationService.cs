@@ -49,10 +49,10 @@ namespace TshirtStore.ApplicationService
             return null;
         }
 
-        public Product UpdatebasicInformation(UpdateProductInfoCommand command)
+        public Product UpdateBasicInformation(UpdateProductInfoCommand command)
         {
             var product = _repository.Get(command.Id);
-            product.UpdateInfo(command.Title,command.Description,command.CategoryId);
+            product.UpdateInfo(command.Title, command.Description, command.CategoryId);
             _repository.Update(product);
 
             if (Commit())
@@ -60,6 +60,18 @@ namespace TshirtStore.ApplicationService
 
             return null;
         }
+
+        //public Product UpdatebasicInformation(UpdateProductInfoCommand command)
+        //{
+        //    var product = _repository.Get(command.Id);
+        //    product.UpdateInfo(command.Title,command.Description,command.CategoryId);
+        //    _repository.Update(product);
+
+        //    if (Commit())
+        //        return product;
+
+        //    return null;
+        //}
 
         public Product Delete(int id)
         {
