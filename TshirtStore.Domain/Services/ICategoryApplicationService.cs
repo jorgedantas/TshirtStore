@@ -9,8 +9,8 @@ namespace TshirtStore.Domain.Services
         List<Category> Get();
         List<Category> Get(int skip, int take);
         Category Get(int id);
-        void Create(CreateCategoryCommand category);
-        void Update(EditCategoryCommand category);
-        void Delete(int id);
+        Category Create(CreateCategoryCommand command);
+        Category Update(EditCategoryCommand command);
+        Category Delete(int id);
     }
 }

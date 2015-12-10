@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System.Collections.Generic;
+using System.Globalization;
 using TshirtStore.Domain.Entities;
 
 namespace TshirtStore.Domain.Repositories
@@ -6,7 +7,8 @@ namespace TshirtStore.Domain.Repositories
     public interface IUserRepository
     {
         void Register(User user);
-        User Authenticate(StringInfo email, string password);
+        User Authenticate(string email, string password);
         User GetByEmail(string email);
+        List<User> List();
     }
 }

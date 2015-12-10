@@ -4,10 +4,9 @@ namespace TshirtStore.Domain.Entities
 {
     public class OrderItem
     {
-        public OrderItem(int quantity , decimal price)
+        public OrderItem()
         {
-            this.Quantity = quantity;
-            this.Price = price;
+          
         }
         public int Id { get; private set; }
         public int Quantity { get; private set; }

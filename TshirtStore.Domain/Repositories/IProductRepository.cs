@@ -7,8 +7,8 @@ namespace TshirtStore.Domain.Repositories
     {
         List<Product> Get();
         List<Product> Get(int skip, int take);
-        List<Product> GetProductsInStock(string email);
-        List<Product> GetProductsOutOfStock(string email);
+        List<Product> GetProductsInStock();
+        List<Product> GetProductsOutOfStock();
         Product Get(int id);
 
   
