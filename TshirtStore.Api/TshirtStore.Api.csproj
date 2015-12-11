@@ -178,6 +178,7 @@
     <Content Include="packages.config" />
     <Content Include="wwwroot\Admin\app\app.js" />
     <Content Include="wwwroot\Admin\app\controllers\home\homecontroller.js" />
+    <Content Include="wwwroot\Admin\app\routes.js" />
     <Content Include="wwwroot\Admin\bower_components\angular-route\angular-route.js" />
     <Content Include="wwwroot\Admin\bower_components\angular-route\angular-route.min.js" />
     <Content Include="wwwroot\Admin\bower_components\angular-route\index.js" />
@@ -437,6 +438,7 @@
     <Content Include="wwwroot\Admin\bower_components\toastr\toastr.min.js" />
     <Content Include="wwwroot\Admin\public\dev\index.html" />
     <Content Include="wwwroot\Admin\public\dev\pages\account\login.html" />
+    <Content Include="wwwroot\Admin\public\dev\pages\home\index.html" />
     <Content Include="wwwroot\Admin\public\dev\pages\shared\headbar.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

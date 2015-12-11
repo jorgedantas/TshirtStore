@@ -16,29 +16,25 @@
 <body>
     <div ng-include="'pages/shared/headbar.html'"></div>
 
-    <div ng-controller ="HomeController">
-        <h1>{{ title }}</h1>
-    </div>
-   
+    <div class="container" ng-view></div>
+
+<!--<div ng-controller ="HomeController as vm">
+        <h1>{{ //vm.title }}</h1>
+        <input type="text" ng-model ="title" value=""/>
+    </div>-->
 
 
 
 
 
 
-
-
-
-
-
-
-
-    <script src="../../bower_components/jquery/dist/jquery.js"></script>
+<script src="../../bower_components/jquery/dist/jquery.js"></script>
     <script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../../bower_components/toastr/toastr.js"></script>
     <script src="../../bower_components/angular/angular.js"></script>
     <script src="../../bower_components/angular-route/angular-route.js"></script>
     <script src="../../app/app.js"></script>
+    <script src="../../app/routes.js"></script>
     <script src="../../app/controllers/home/homecontroller.js"></script>
 
 </body>

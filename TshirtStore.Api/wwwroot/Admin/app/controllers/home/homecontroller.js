@@ -3,11 +3,17 @@
 
     angular.module('mwa').controller('HomeController', HomeController);
 
-    HomeController.$injector = ['$scope'];
+    HomeController.$injector = [];
 
-    function HomeController($scope) {
-        $scope.title = "meu home controller";
+    function HomeController() {
+        var vm = this;
+        vm.title = "meu home controller";
+       
+        activate();
 
+        function activate() {
+            
+        }
 
     }
 })();
